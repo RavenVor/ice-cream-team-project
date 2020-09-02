@@ -4,7 +4,7 @@
  * Все паршалы подключаются сюда.
  */
 /* Загальні стилі */
-.html {
+html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -82,7 +82,7 @@
 }
 
 .secondary-title {
-  padding-bottom: 15px;
+  margin-bottom: 15px;
   font-size: 18px;
   line-height: 1.17;
   color: #ffa5ba;
@@ -154,10 +154,9 @@
   .header-nav {
     display: none;
     position: absolute;
-    top: 0%;
+    top: 0;
     right: 0;
     background-color: #e17992;
-    padding-top: 123px;
     padding-bottom: 60px;
     border: 1px solid #ececec;
   }
@@ -165,6 +164,7 @@
 
 @media screen and (min-width: 1200px) {
   .header-nav {
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -174,6 +174,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    border: none;
   }
 }
 
@@ -209,6 +210,13 @@
   z-index: 4;
 }
 
+@media screen and (min-width: 768px) {
+  .btn-menu {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .btn-menu {
     display: none;
@@ -240,17 +248,34 @@
 @media screen and (max-width: 767px) {
   .header-btn {
     display: none;
-    position: absolute;
-    top: 60px;
-    right: 20px;
   }
 }
 
-.header-nav.is-open .header-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 10;
+@media screen and (min-width: 1200px) {
+  .header-btn {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-btn.menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-nav .header-btn.menu {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 19px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-nav .header-btn.menu {
+    display: none;
+  }
 }
 
 .nav-item {
@@ -265,6 +290,18 @@
   padding-left: 21px;
   border-top: 1px solid #e18298;
   border-bottom: 1px solid #e18298;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.icon-btn-menu {
+  margin-left: 12px;
 }
 
 .example {
