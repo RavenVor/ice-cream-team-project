@@ -1,0 +1,78 @@
+.hero{
+    position: absolute;
+    height: 502px;
+    background-color: $hero-background-color;
+    padding-top: 193px;
+    margin-bottom: 19px;
+}
+
+.hero-ellipse{
+    width: 346px;
+    height: 344px;
+    fill: $time-color;
+}
+
+.hero-container{
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero-tittle{
+    font-family: $title-font;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $white-title-color;
+}
+
+.tittle-part{
+    font-family: $title-font;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 96.5%;
+    text-transform: uppercase;
+
+    color: $main-title-color;
+}
+
+.hero-button-wrapper{
+    display: flex;
+}
+
+.hero-button{
+    width: 62.4px;
+    height: 24px;
+
+    font-family: $main-font;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn-products{
+    color: $main-background-color;
+    background: $accent-background-color;
+    margin-right: 8px;
+}
+
+.btn-how-its-made{
+    color: $main-title-color;
+    background: $main-background-color;
+}
+
+@media screen and (max-width: 320px){
+    .hero-opportunities-list{
+        display: none;
+    }
+
+    .hero-description{
+        display: none;
+    }
+}

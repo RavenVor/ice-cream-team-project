@@ -18,8 +18,22 @@
 
 .page {
   font-family: "DM Sans", sans-serif;
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
   color: #FFFFFF;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .page {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page {
+    font-size: 16px;
+  }
 }
 
 .list {
@@ -36,6 +50,71 @@
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.main-title,
+.secondary-title {
+  margin: 0;
+  font-family: "Titan One", cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.main-title {
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: #D41443;
+}
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-title {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
+}
+
+.secondary-title {
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #FFA5BA;
+}
+
+@media screen and (min-width: 768px) {
+  .secondary-title {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .secondary-title {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+}
+
+.hero {
+  position: absolute;
+  width: 320px;
+  height: 502px;
+  left: 0px;
+  top: 0px;
+  background: #FFB8CA;
+}
+
+.hero .container {
+  width: 320px;
+  height: 502px;
 }
 
 .example {
