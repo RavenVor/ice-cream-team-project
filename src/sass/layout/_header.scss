@@ -1,0 +1,126 @@
+.header {
+  position: relative;
+  background-color: teal;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    justify-content: space-around;
+  }
+}
+
+.header-logo {
+  width: 199px;
+  height: 50px;
+}
+
+.header-nav {
+  width: 250px;
+  height: 502px;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.26;
+  font-style: normal;
+
+  z-index: 4;
+  &.is-open {
+    display: block;
+  }
+  .link {
+    color: $main-text-color;
+    text-decoration: none;
+  }
+  .link.current {
+    color: $accent-text-color;
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    background-color: #e17992;
+    padding-top: 123px;
+    padding-bottom: 60px;
+    border: 1px solid #ececec;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.close {
+  fill: $main-text-color;
+  display: none;
+  .btn-menu.is-open & {
+    display: block;
+  }
+}
+
+.burger {
+  fill: $accent-text-color;
+  .btn-menu.is-open & {
+    display: none;
+  }
+}
+
+.btn-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  z-index: 4;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.header-btn {
+  display: flex;
+  width: 159px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $contacts-background;
+  color: $accent-text-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  text-align: center;
+  border-width: 0;
+  border-radius: 22px;
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+.header-nav.is-open {
+  .header-btn {
+    display: flex;
+    z-index: 10;
+  }
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 42px;
+  padding-left: 21px;
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
+}
