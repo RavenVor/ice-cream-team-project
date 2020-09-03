@@ -4,7 +4,7 @@
  * Все паршалы подключаются сюда.
  */
 /* Загальні стилі */
-.html {
+html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -36,6 +36,31 @@
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.main-title {
+  margin: 0;
+  font-family: "Titan One", cursive;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #D41443;
+  text-transform: uppercase;
+}
+
+.secondary-title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Titan One", cursive;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFA5BA;
+  text-transform: uppercase;
 }
 
 .example {
