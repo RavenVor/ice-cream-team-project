@@ -95,7 +95,9 @@ input[name='r'] {
   left: 50%;
   background-color: #fafafa;
   transform: translate(-50%, -50%);
-  text-decoration: underline;
+}
+.er {
+  border-bottom: 2px solid #e1e1e1;
 }
 /* .review-comment::after {
   content: "";
