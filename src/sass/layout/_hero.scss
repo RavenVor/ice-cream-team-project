@@ -1,46 +1,35 @@
 .hero-container {
-    padding-left: 20px;
-    padding-right: 20px;
+    position: relative;
+    left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
     @media screen and (min-width: 320px) {
-      width: 320px;
+      min-width: 320px;
       margin: 0 auto;
     }
     @media screen and (min-width: 768px) {
-      width: 768px;
+      min-width: 768px;
       padding-left: 34px;
       padding-right: 34px;
     }
     @media screen and (min-width: 1200px) {
-      width: 1200px;
-      padding-left: 46px;
-      padding-right: 46px;
+      min-width: 1200px;
+      padding-left: 115px;
+      padding-right: 115px;
     }
   }
 
-  .hero{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    background-color: $hero-background-color;
-    transform: translateX(-50%);
-
+.hero{
+    background-color: $hero-background-color;    
 }
 
-.hero-tittle{
-    font-family: $title-font;
-    font-weight: normal;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
+.secondary-title{
+    font-size: 26px;
     color: $white-title-color;
 }
 
-.tittle-part{
-    font-family: $title-font;
-    font-weight: normal;
-    text-transform: uppercase;
-
-    color: $main-title-color;
+.main-title{
+    font-size: 48px;;
 }
 
 .hero-button-wrapper{
@@ -88,44 +77,42 @@
 }
 
 @media screen and (max-width: 767px){
+
+    .max-hero {
+        max-width: 320px;
+        height: 502px;
+        margin: 0 auto;
+
+        background-image: url(../images/hero-images/hero-ice-cream/ice-cream-mobile.png),
+        url(../images/hero-images/hero-ellipse/ellipse-mobile.png);
+    
+            background-repeat: no-repeat;
+            background-position: bottom 0 left 117px, top 83px left 36px;
+            background-size: 171px 410px, 346 344;
+
+    
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            .hero{
+                background-image: url(../images/hero-images/hero-ice-cream/ice-cream-mobile@2x.png),
+                url(../images/hero-images/hero-ellipse/ellipse-mobile@2x.png);
+            }
+        }
+    }
     
   .hero{
     height: 502px;
-
-    background-image: url(../images/hero-images/hero-ice-cream/ice-cream-mobile.png),
-    url(../images/hero-images/hero-ellipse/ellipse-mobile.png);
-
-        background-repeat: no-repeat;
-        background-position: bottom 0 left 117px, top 83px left 36px;
-        background-size: 171px 410px, 346 344;
-        background-size: contain;
-}
-
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-        .hero{
-            background-image: url(../images/hero-images/hero-ice-cream/ice-cream-mobile@2x.png),
-            url(../images/hero-images/hero-ellipse/ellipse-mobile@2x.png);
-        }
     }
 
     .tittle-wrapper{
         width: 218px;
         height: 106px;
-        margin-top: 193px;
-
+        padding-top: 193px;
     }
 
-    .hero-tittle{
-        font-size: 26px;
-        margin-top: 0;
+    .secondary-title{
         margin-bottom: 19px;
-    }
-
-    .tittle-part{
-        font-size: 48px;
-        line-height: 96.5%;
     }
 
     .hero-opportunities-list{
@@ -142,62 +129,81 @@
 }
 
     @media screen and (min-width: 768px){
-        .hero{
-            height: 399px;
 
+        .max-hero {
+            max-width: 700px;
+            height: 399px;
+            margin: 0 auto;
+        
             background-image: url(../images/hero-images/hero-girl/girl-tablet.png),
             url(../images/hero-images/hero-milk/milk-tablet.png),
             url(../images/hero-images/hero-ice-cream/ice-cream-tablet.png),
-            url(../images/hero-images/hero-circle/circle-tablet.png),
-            url(../images/hero-images/hero-circle/circle-tablet.png),
             url(../images/hero-images/hero-ellipse/ellipse-tablet.png);
             background-repeat: no-repeat;
-            background-size: 168px 133px, 124px 126px, 143px 336px, 16px 16px, 16px 16px, 324px 322px;
-            background-position: left 566px bottom, left 34px bottom 28px, left 378px bottom, left 725px top 92px, left 725px top 149px, top 31px left 307px;
-        }
-
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            .hero{
-                background-image: url(../images/hero-images/hero-girl/girl-tablet@2x.png),
-                url(../images/hero-images/hero-milk/milk-tablet@2x.png),
-                url(../images/hero-images/hero-ice-cream/ice-cream-tablet@2x.png),
-                url(../images/hero-images/hero-circle/circle-tablet@2x.png),
-                url(../images/hero-images/hero-circle/circle-tablet@2x.png),
-                url(../images/hero-images/hero-ellipse/ellipse-tablet@2x.png);
+            background-size: 168px 133px, 124px 126px, 143px 336px, 324px 322px;
+            background-position: left 85% bottom, left 0 bottom 28px, left 55% bottom, top 50% left 62%;
+                
+        
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                .max-hero{
+                    background-image: url(../images/hero-images/hero-girl/girl-tablet@2x.png),
+                    url(../images/hero-images/hero-milk/milk-tablet@2x.png),
+                    url(../images/hero-images/hero-ice-cream/ice-cream-tablet@2x.png),
+                    url(../images/hero-images/hero-ellipse/ellipse-tablet@2x.png);
+                }
             }
         }
+
+    .hero{
+        height: 399px;
+    }
 
     .hero-wrapper{
         display: flex;
         justify-content: space-between;
     }
 
-    .hero-tittle{
+    .tittle-wrapper{
+        padding-top: 102px;
+    }
+
+    .secondary-title{
         font-size: 22px;
-        margin-top: 102px;
         margin-bottom: 20px;
     }
 
-    .tittle-part{
+    .main-title{
         font-size: 34px;
-        line-height: 90.5%;
     }
 
     .hero-opportunities-list{
         display: flex;
         flex-direction: column;
-
-        margin-top: 94px;
+        margin: 94px auto 0 60%;
     }
 
     .hero-opportunities-list-item{
         text-align: right;
 
+        background-image: url(../images/hero-images/hero-circle/circle-tablet.png);
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: right 0 top 0;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            .hero-opportunities-list-item{
+                background-image: url(../images/hero-images/hero-circle/circle-tablet@2x.png);
+            }
+        }
+
         &:not(:last-child){
             margin-bottom: 13px;
         }
+    
     }
 
     .hero-opportunities-list-item-figures{
@@ -210,6 +216,7 @@
         text-transform: uppercase;
 
         color: $accent-text-color;
+        padding-right: 8px;
     }
 
     .hero-opportunities-list-item-desc{
@@ -219,7 +226,7 @@
         line-height: 1.25;
 
         color: $main-text-color;
-
+        padding-right: 8px;
         margin: 0;
     }
 
@@ -249,48 +256,50 @@
 
 @media screen and (min-width: 1200px){
 
-    .hero-container {
-          max-width: 1200px;
-          padding-left: 115px;
-          padding-right: 115px;
-    }
-
-    .hero{
+    .max-hero {
+        max-width: 1050px;
         height: 665px;
+        margin: 0 auto;
 
-        background-image: url(../images/hero-images/hero-girl/girl-desktop.png),
-        url(../images/hero-images/hero-milk/milk-desktop.png),
-        url(../images/hero-images/hero-ice-cream/ice-cream-desktop.png),
-        url(../images/hero-images/hero-circle/circle-desktop.png),
-        url(../images/hero-images/hero-circle/circle-desktop.png),
-        url(../images/hero-images/hero-ellipse/ellipse-desktop.png);
-        background-repeat: no-repeat;
-        background-size: 293px 232px, 188px 191px, 236px 557px, 30px 30px, 30px 30px, 538px 538px;
-        background-position: left 878px bottom, left 77px top 429px, left 594px bottom, left 1070px top 153px, left 1070px top 240px, left 475px top 52px;
-    }
+            background-image: url(../images/hero-images/hero-girl/girl-desktop.png),
+            url(../images/hero-images/hero-milk/milk-desktop.png),
+            url(../images/hero-images/hero-ice-cream/ice-cream-desktop.png),
+            url(../images/hero-images/hero-circle/circle-desktop.png),
+            url(../images/hero-images/hero-circle/circle-desktop.png),
+            url(../images/hero-images/hero-ellipse/ellipse-desktop.png);
+            background-repeat: no-repeat;
+            background-size: 293px 232px, 188px 191px, 236px 557px, 30px 30px, 30px 30px, 538px 538px;
+            background-position: left 100% bottom, left 0 top 429px, left 55% bottom, left 1070px top 153px, left 1070px top 240px, left 65% top 52px;
 
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx){
-        .hero{
-            background-image: url(../images/hero-images/hero-girl/girl-desktop@2x.png),
-            url(../images/hero-images/hero-milk/milk-desktop@2x.png),
-            url(../images/hero-images/hero-ice-cream/ice-cream-desktop@2x.png),
-            url(../images/hero-images/hero-circle/circle-desktop@2x.png),
-            url(../images/hero-images/hero-circle/circle-desktop@2x.png),
-            url(../images/hero-images/hero-ellipse/ellipse-desktop@2x.png);
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx){
+            .hero{
+                background-image: url(../images/hero-images/hero-girl/girl-desktop@2x.png),
+                url(../images/hero-images/hero-milk/milk-desktop@2x.png),
+                url(../images/hero-images/hero-ice-cream/ice-cream-desktop@2x.png),
+                url(../images/hero-images/hero-circle/circle-desktop@2x.png),
+                url(../images/hero-images/hero-circle/circle-desktop@2x.png),
+                url(../images/hero-images/hero-ellipse/ellipse-desktop@2x.png);
+            }
         }
     }
     
-    .hero-tittle{
+    .hero{
+        height: 665px;
+    }
+
+    .tittle-wrapper{
+        padding-top: 171px;
+    }
+    
+    .secondary-title{
         font-size: 38px;
-        margin-top: 171px;
         margin-bottom: 25px;
     }
 
-    .tittle-part{
+    .main-title{
         font-size: 58px;
-        line-height: 90.5%;
     }
 
     .hero-button{
@@ -302,11 +311,24 @@
     }
 
     .hero-opportunities-list{
-        margin-top: 153px;
+        margin: 153px 0 0 60%;
     }
 
     .hero-opportunities-list-item{
         text-align: right;
+
+        background-image: url(../images/hero-images/hero-circle/circle-desktop.png);
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: right 0 top 0;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            .hero-opportunities-list-item{
+                background-image: url(../images/hero-images/hero-circle/circle-desktop@2x.png);
+            }
+        }
 
         &:not(:last-child){
             margin-bottom: 18px;
@@ -315,11 +337,13 @@
 
     .hero-opportunities-list-item-figures{
         font-size: 46px;
+        padding-right: 18px;
     }
 
     .hero-opportunities-list-item-desc{
         font-size: 14px;
         line-height: 1.28;
+        padding-right: 18px;
     }
 
     .hero-description-wrapper{
