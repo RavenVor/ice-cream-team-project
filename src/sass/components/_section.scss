@@ -5,6 +5,7 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+
 .main-title {
   font-size: 34px;
   line-height: 1.15;
@@ -19,8 +20,9 @@
     letter-spacing: 0.06em;
   }
 }
+
 .secondary-title {
-  margin-bottom: 15px;
+  padding-bottom: 15px;
   font-size: 18px;
   line-height: 1.17;
   color: $secondary-title-color;
