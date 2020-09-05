@@ -1,34 +1,35 @@
-<form class=>
-  <div class="slider middle">
-    <div class="slides">
-      <input type="radio" name="r" id="r1" />
-      <input type="radio" name="r" id="r2" />
-      <input type="radio" name="r" id="r3" />
+<section class="page-review container">
+  <div class="page-review-wrapper">
+    <img
+      class="review-photo"
+      srcset="
+        ./images/vekker-images/kudryanegr.jpg    1x,
+        ./images/vekker-images/kudryanegr@2x.jpg 2x
+      "
+      src="./images/vekker-images/kudryanegr.jpg"
+      alt=""
+    />
     <p class="review-comment">
-      <span class="er">Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-        Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.</span> <span class="er">Lorem
-        ipsum primis in nibh vel risus.</span>
+      <span class="review-comment-span"
+        >Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+        Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum
+        primis in nibh vel risus.</span
+      >
     </p>
-      <ul class="review-list">
-        <li class="review-list-item"></li>
-        <li class="review-list-item"></li>
-        <li class="review-list-item"></li>
-      </ul>
-      <div class="slide s1">
-        <img srcset="./images/vekker-images/kudryanegr.jpg 1x, ./images/vekker-images/kudryanegr@2x.jpg 2x" src="./images/vekker-images/kudryanegr.jpg" alt="" /><span class="review-name">Emily, Los Angeles</span>
-      </div>
-      <div class="slide s2">
-        <img srcset="./images/vekker-images/negr.jpg 1x, ./images/vekker-images/negr@2x.jpg" src="./images/vekker-images/negr.jpg" alt="" /><span class="review-name">Vika Vorona, Jashkiv</span>
-      </div>
-      <div class="slide s3">
-        <img srcset="./images/vekker-images/ochki.jpg 1x, ./images/vekker-images/ochki@2x.jpg 2x" src="./images/vekker-images/ochki.jpg" alt="" /><span class="review-name">Tolyaniya Kozlova,
-          Vinterfell</span>
-      </div>
-    </div>
-    <div class="navigation">
-      <label for="r1" class="bar"><img class="nav-icon" src="./images/vekker-images/home.svg" alt="" /></label>
-      <label for="r2" class="bar"><img class="nav-icon" src="./images/vekker-images/home.svg" alt="" /></label>
-      <label for="r3" class="bar"><img class="nav-icon" src="./images/vekker-images/home.svg" alt="" /></label>
-    </div>
   </div>
-</form>
+  <ul class="review-list">
+    <li class="review-list-item"></li>
+    <li class="review-list-item"></li>
+    <li class="review-list-item"></li>
+  </ul>
+  <p class="review-location" class="preview-name">Emily, Los Angeles</p>
+  <ul class="review-list-slider">
+    <li class="review-list-item-slider">
+      <svg class="review-svg" width="12px" height="12px">
+        <use href="./images/vekker-images/sprite.svg#icon-home"></use>
+      </svg>
+    </li>
+    <li class="review-list-item-slider"></li>
+    <li class="review-list-item-slider"></li>
+  </ul>
+</section>
