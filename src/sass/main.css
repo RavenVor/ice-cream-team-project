@@ -51,7 +51,6 @@ html {
   max-width: 100%;
   height: auto;
 }
-
 .main-title,
 .secondary-title {
   margin: 0;
@@ -72,7 +71,6 @@ html {
     font-size: 48px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .main-title {
     font-size: 58px;
@@ -80,7 +78,6 @@ html {
     letter-spacing: 0.06em;
   }
 }
-
 .secondary-title {
   margin-bottom: 15px;
   font-size: 18px;
@@ -258,7 +255,6 @@ html {
     display: none;
   }
 }
-
 @media screen and (min-width: 320px) {
   .btn-menu.is-open {
     top: 20px;
