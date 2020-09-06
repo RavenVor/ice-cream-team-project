@@ -1,225 +1,213 @@
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-@media screen and (min-width: 320px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
+.review {
+  position: relative;
+  padding-top: 154px;
+  padding-bottom: 170px;
+  @media screen and (min-width: 768px) {
+    padding-top: 279px;
+    padding-bottom: 197px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 382px;
+    padding-bottom: 234px;
+  }
+  & .container {
     width: 320px;
     margin: 0 auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding-left: 103px;
-    padding-right: 103px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-    padding-left: 170px;
-    padding-right: 170px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .review-photo {
-    display: block;
-    margin: 0 auto;
-  }
-  .review-comment {
     text-align: center;
-    padding-top: 43px;
-    padding-right: 85px;
-    padding-bottom: 26px;
-    padding-left: 76px;
-    font-size: 12px;
-    line-height: 255%;
-    margin-top: 29px;
-    margin-bottom: 30px;
-    background: #fafafa;
-    background-image: url(../images/vekker-images/zapyata.svg);
-    background-repeat: no-repeat;
-    background-size: 54px 40px;
-    background-position: top 24px left 61px;
-  }
-  .review-comment-span {
-    border-bottom: 1px solid #e1e1e1;
-  }
-  .review-list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 18px;
-  }
-  .review-list-item {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: #c7133e;
-  }
-  .review-list-item:not(:last-child) {
-    margin-right: 10px;
-  }
-  .review-location {
-    text-align: center;
-    font-size: 14px;
-    line-height: 186%;
-    margin-bottom: 30px;
-  }
-  .review-list-slider {
-    display: flex;
-    justify-content: center;
-  }
-  .review-list-item-slider {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #d9d9d9;
-  }
-  .review-list-item-slider:not(:last-child) {
-    margin-right: 18px;
-  }
-  .review-svg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
   }
 }
-@media screen and (min-width: 768px) {
-  .review-photo {
-    display: block;
-    margin: 0 auto;
+.gallery-foto {
+  position: absolute;
+  width: 364px;
+  height: 122px;
+  top: -48px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+  @media screen and (min-width: 768px) {
+    width: 786px;
+    height: 264px;
+    top: -106px;
   }
-  .review-comment {
-    /* max-width: 620px; */
-    text-align: center;
-    padding-top: 43px;
-    padding-right: 136px;
-    padding-bottom: 26px;
-    padding-left: 127px;
-    font-size: 14px;
-    line-height: 216%;
-    letter-spacing: 0.04em;
-    margin-top: 19px;
+  @media screen and (min-width: 1200px) {
+    width: 1260px;
+    height: 430px;
+    top: -171px;
+  }
+}
+.review-foto {
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+  margin-bottom: 29px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
+  }
+}
+.review-wrapper {
+  position: relative;
+  width: 280px;
+  height: 308px;
+  margin-bottom: 21px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    height: 164px;
     margin-bottom: 24px;
-    background: #fafafa;
-    background-image: url(../images/vekker-images/zapyata.svg);
-    background-repeat: no-repeat;
-    background-size: 54px 40px;
-    background-position: top 22px left 104px;
   }
-  .review-comment-span {
-    border-bottom: 1px solid #e1e1e1;
-  }
-  .review-list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 18px;
-  }
-  .review-list-item {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: #c7133e;
-  }
-  .review-list-item:not(:last-child) {
-    margin-right: 10px;
-  }
-  .review-location {
-    text-align: center;
-    font-size: 16px;
-    line-height: 186%;
-    margin-bottom: 30px;
-  }
-  .review-list-slider {
-    display: flex;
-    justify-content: center;
-  }
-  .review-list-item-slider {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #d9d9d9;
-  }
-  .review-list-item-slider:not(:last-child) {
-    margin-right: 18px;
-  }
-  .review-svg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
+  @media screen and (min-width: 1200px) {
+    width: 926px;
+    height: 138px;
+    margin-bottom: 15px;
   }
 }
-
-@media screen and (min-width: 1200px) {
-  .review-photo {
-    display: block;
-    margin: 0 auto;
+.review-text {
+  width: 157px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  font-size: 12px;
+  line-height: 2.55;
+  color: $secondary-text-color;
+  background-image: url(../images/sprite.svg#icon-review-balls);
+  background-repeat: no-repeat;
+  background-size: 54px 40px;
+  background-position: top 20px left 0px;
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    padding-top: 47px;
+    padding-bottom: 34px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 2.16;
+    background-position: top 30px left 10px;
   }
-  .review-comment {
-    /* max-width: 620px; */
-    text-align: center;
-    padding-top: 32px;
-    padding-right: 99px;
-    padding-bottom: 32px;
-    padding-left: 77px;
+  @media screen and (min-width: 1200px) {
+    width: 822px;
+    padding-top: 47px;
+    padding-bottom: 39px;
+    padding-right: 35px;
+    padding-left: 35px;
     font-size: 16px;
-    line-height: 186%;
-    letter-spacing: 0.04em;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background: #fafafa;
-    background-image: url(../images/vekker-images/zapyata.svg);
-    background-repeat: no-repeat;
-    background-size: 54px 40px;
-    background-position: top 14px left 65px;
+    line-height: 1.86;
   }
-  .review-comment-span {
-    border-bottom: 1px solid #e1e1e1;
+}
+.line {
+  position: absolute;
+  display: block;
+  width: 180px;
+  border-bottom: 2px solid #e1e1e1;
+  margin: 0;
+  @media screen and (min-width: 768px) {
+    width: 500px;
   }
-  .review-list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+  @media screen and (min-width: 1200px) {
+    width: 813px;
   }
-  .review-list-item {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: #c7133e;
+}
+.line1 {
+  top: 62px;
+  @media screen and (min-width: 768px) {
+    top: 76px;
   }
-  .review-list-item:not(:last-child) {
+}
+.line2 {
+  top: 93px;
+  @media screen and (min-width: 768px) {
+    top: 106px;
+  }
+}
+.line3 {
+  top: 124px;
+  @media screen and (min-width: 768px) {
+    top: 136px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.line4 {
+  top: 155px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.line5 {
+  top: 186px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.line6 {
+  top: 217px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.line7 {
+  top: 248px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.line8 {
+  top: 279px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.slide-points {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #d31342;
+  &:not(:last-child) {
     margin-right: 10px;
   }
-  .review-location {
-    text-align: center;
-    font-size: 20px;
-    line-height: 186%;
+}
+.review-name {
+  font-size: 14px;
+  line-height: 1.86;
+  color: $secondary-text-color;
+  margin-top: 18px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-top: 15px;
     margin-bottom: 35px;
   }
-  .review-list-slider {
-    display: flex;
-    justify-content: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
   }
-  .review-list-item-slider {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #d9d9d9;
+}
+.slide-chek {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    background-color: #ffff;
+    border-radius: 0;
+    background-image: url(../images/sprite.svg#icon-review-home);
   }
-  .review-list-item-slider:not(:last-child) {
+  &:not(:last-child) {
     margin-right: 18px;
-  }
-  .review-svg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
   }
 }
