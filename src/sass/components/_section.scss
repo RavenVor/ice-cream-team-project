@@ -10,6 +10,9 @@
   line-height: 1.15;
   letter-spacing: 0.04em;
   color: $main-title-color;
+  @media screen and (min-width: 480px) {
+    font-size: 40px;
+  }
   @media screen and (min-width: 768px) {
     font-size: 48px;
   }
@@ -24,6 +27,10 @@
   font-size: 18px;
   line-height: 1.17;
   color: $secondary-title-color;
+  @media screen and (min-width: 480px) {
+    font-size: 22px;
+    line-height: 1.16;
+  }
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.15;

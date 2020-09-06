@@ -22,6 +22,9 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 200;
+  @media screen and (min-width: 480px) {
+    widows: 364px;
+  }
   @media screen and (min-width: 768px) {
     width: 768px;
     height: 264px;
@@ -47,7 +50,7 @@
 }
 .review-wrapper {
   position: relative;
-  width: 280px;
+  // width: 280px;
   height: 308px;
   margin-bottom: 21px;
   margin-left: auto;
