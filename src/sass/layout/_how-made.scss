@@ -12,7 +12,7 @@
   }
 }
 .how-made {
-  position: relative;
+  // position: relative;
   background-color: #fff5f6;
   @media screen and (max-width: 767px) {
     padding-top: 125px;
@@ -22,13 +22,13 @@
     background-size: 320px 133px;
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 50;
+    // z-index: 50;
   }
   @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: url('../images/how-made/how-made-bcg2-mobile@2x.png');
-    z-index: 50;
+    // z-index: 50;
   }
   @media screen and (min-width: 768px) {
     padding-top: 130px;
@@ -46,7 +46,7 @@
     background-size: 1280px 534px;
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 50;
+    // z-index: 50;
   }
   @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -300,14 +300,14 @@
   }
 }
 .how-made-overlay {
-  position: absolute;
+  // position: absolute;
   @media screen and (max-width: 767px) {
     background-image: url('../images/how-made/how-made-positioned-full-pic-mobile.png');
     background-position: bottom -48px left 0;
     background-size: 320px 122px;
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 100;
+    // z-index: 100;
   }
   @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -320,7 +320,7 @@
     background-size: 768px 264px;
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 100;
+    // z-index: 100;
   }
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -334,7 +334,7 @@
     background-size: 1280px 430px;
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 100;
+    // z-index: 100;
   }
   @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
