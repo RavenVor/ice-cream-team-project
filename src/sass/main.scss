@@ -2,7 +2,7 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-@import './base/visually-hidden';
+@import './base/is-hidden';
 @import './utils/variables';
 @import './utils/mixins';
 @import './base/base';
