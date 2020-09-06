@@ -11,32 +11,24 @@
     padding-bottom: 234px;
   }
   & .container {
-    width: 320px;
-    margin: 0 auto;
     text-align: center;
-    @media screen and (min-width: 768px) {
-      width: 768px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
-    }
   }
 }
 .gallery-foto {
   position: absolute;
-  width: 364px;
+  width: 320px;
   height: 122px;
   top: -48px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 200;
   @media screen and (min-width: 768px) {
-    width: 786px;
+    width: 768px;
     height: 264px;
     top: -106px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1260px;
+    width: 1200px;
     height: 430px;
     top: -171px;
   }
@@ -81,7 +73,7 @@
   font-size: 12px;
   line-height: 2.55;
   color: $secondary-text-color;
-  background-image: url(../images/sprite.svg#icon-review-balls);
+  background-image: url(../images/review/zapyata.svg);
   background-repeat: no-repeat;
   background-size: 54px 40px;
   background-position: top 20px left 0px;
@@ -205,7 +197,7 @@
   &:active {
     background-color: #ffff;
     border-radius: 0;
-    background-image: url(../images/sprite.svg#icon-review-home);
+    background-image: url(../images/review/home.svg);
   }
   &:not(:last-child) {
     margin-right: 18px;
