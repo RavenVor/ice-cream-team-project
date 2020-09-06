@@ -40,6 +40,11 @@ p {
   padding-left: 50px;
   z-index: 75;
 
+  @media screen and (min-width: 480px) {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+
   @media screen and (min-width: 768px) {
     top: -78px;
     padding-right: 35px;
@@ -72,6 +77,10 @@ p {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
+  @media screen and (min-width: 480px) {
+    padding: 50px 32px;
+  }
+
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -79,7 +88,6 @@ p {
   }
 
   @media screen and (min-width: 768px) {
-    padding: 50px 32px;
     width: calc((100% - 40px) / 3);
 
     &:not(:last-child) {
@@ -116,6 +124,12 @@ p {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   background-color: $product2-color;
+
+  @media screen and (min-width: 480px) {
+    width: 90px;
+    height: 22px;
+    font-size: 14px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 73px;

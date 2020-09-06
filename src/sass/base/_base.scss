@@ -13,7 +13,7 @@ html {
   color: $main-text-color;
   font-weight: 500;
   font-size: 12px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     font-size: 14px;
   }
   @media screen and (min-width: 1200px) {
