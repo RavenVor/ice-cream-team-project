@@ -211,8 +211,8 @@ html {
     top: 0;
     right: 0;
     padding-bottom: 60px;
-    background-color: #e17992;
-    border: 1px solid #ececec;
+    background-color: #E17992;
+    border: 1px solid #ECECEC;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -244,10 +244,8 @@ html {
 }
 
 .btn-menu {
-  position: absolute;
-  right: 28px;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   border: none;
   margin-left: auto;
@@ -278,12 +276,28 @@ html {
     right: 30px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .btn-menu.is-open {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border: none;
+    margin-left: auto;
+    padding: 0;
+    background-color: transparent;
+    z-index: 4;
+    top: 23px;
+    right: 34px;
+  }
+}
 
 .header-btn {
-  display: flex;
+  margin-right: 34px;
+  margin-left: 30px;
   width: 159px;
   height: 44px;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   background-color: #ffffff;
   color: #d41443;
@@ -303,12 +317,6 @@ html {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
-  .header-btn {
-    margin-left: auto;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .header-btn.menu {
     display: block;
@@ -316,10 +324,16 @@ html {
 }
 @media screen and (max-width: 1199px) {
   .header-nav .header-btn.menu {
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
     margin-bottom: 19px;
+  }
+  .header-btn.menu .button-name {
+    display: flex;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -336,8 +350,8 @@ html {
   .nav-item {
     width: 100%;
     padding-left: 21px;
-    border-top: 1px solid #e18298;
-    border-bottom: 1px solid #e18298;
+    border-top: 1px solid #E18298;
+    border-bottom: 1px solid #E18298;
     height: 42px;
   }
 }
